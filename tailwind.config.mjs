@@ -1,5 +1,7 @@
+import { Outfit } from "next/font/google";
+
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,10 +10,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightHover: "#fcf4ff",
+        darkHover: "#2a004a",
+        darTheme: "#11001F",
+      },
+      fontFamily: {
+        Outfit: ["Outfit", "sans-serif"],
+        Ovo: ["Ovo", "Serif"],
+      },
+      boxShadow: {
+        black: "4px 4px 0 #000",
+        white: "4px 4px 0 #fff",
       },
     },
   },
   plugins: [],
 };
+
+export default config;
