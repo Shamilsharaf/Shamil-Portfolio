@@ -12,7 +12,7 @@ const config = {
       colors: {
         lightHover: "#fcf4ff",
         darkHover: "#2a004a",
-        darTheme: "#11001F",
+        darkTheme: "#11001F",
       },
       fontFamily: {
         Outfit: ["Outfit", "sans-serif"],
@@ -27,6 +27,7 @@ const config = {
       },
     },
   },
+  darkMode: "selector",
   plugins: [],
 };
 
