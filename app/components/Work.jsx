@@ -37,18 +37,19 @@ const Work = ({ isDarkMode }) => {
         projects showcasing my expertise in front-end development.
       </motion.p>
 
+      {/* Portfolio Grid */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.6 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 dark:text-black"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 dark:text-black"
       >
         {workData.map((project, index) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             key={index}
-            className="w-[350px] h-[260px] bg-no-repeat bg-cover rounded-lg relative cursor-pointer group mx-auto"
+            className="w-full h-[260px] sm:h-[280px] lg:h-[300px] bg-no-repeat bg-cover rounded-lg relative cursor-pointer group mx-auto"
             style={{ backgroundImage: `url(${project.bgImage})` }}
             onClick={() => window.open(project.link, "_blank")}
           >
@@ -65,6 +66,7 @@ const Work = ({ isDarkMode }) => {
         ))}
       </motion.div>
 
+      {/* Show More Button */}
       <motion.a
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
