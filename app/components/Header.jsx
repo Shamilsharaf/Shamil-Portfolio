@@ -13,7 +13,11 @@ const Header = () => {
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
       >
-        <Image src={assets.profile_img} alt="" className="rounded-full w-32" />
+        <Image
+          src={assets.profile_img}
+          alt=""
+          className="rounded-full w-32 h-32 aspect-square object-cover"
+        />
       </motion.div>
       <motion.h3
         initial={{ y: -20, opacity: 0 }}
@@ -28,9 +32,9 @@ const Header = () => {
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"
+        className="text-3xl sm:text-6xl lg:text-[33px] font-Ovo"
       >
-        Frontend web developer based in bengaluru
+        Frontend Web Developer
       </motion.h1>
       <motion.p
         initial={{ opacity: 0 }}
@@ -38,8 +42,8 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        I am a frontend developer from bengaluru, India with 2 years of
-        experience
+        Based in Bengaluru, India | 6+ Years in IT | 2+ Years Specializing in
+        Frontend Development
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a

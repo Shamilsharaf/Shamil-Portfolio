@@ -17,7 +17,14 @@ const Footer = ({ isDarkMode }) => {
             alt=""
             className="w-6"
           />
-          shamilsharaf03@gmail.com
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shamilsharaf03@gmail.com"
+            className="text-blue-500 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            shamilsharaf03@gmail.com
+          </a>
         </div>
       </div>
 
