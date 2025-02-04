@@ -11,7 +11,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   const closeMenu = () => {
-    sideMenuRef.current.style.transform = "translateX(16rem)";
+    sideMenuRef.current.style.transform = "translateX(100%)";
   };
 
   useEffect(() => {
@@ -106,7 +106,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             />
           </a>
 
-          <button className="block md:hidden m1-3" onClick={openMenu}>
+          <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image
               src={isDarkMode ? assets.menu_white : assets.menu_black}
               alt=""
@@ -119,7 +119,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         <ul
           ref={sideMenuRef}
-          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white"
+          className="flex md:hidden flex-col gap-4 py-20 px-10 fixed top-0 bottom-0 right-0 w-64 z-50 h-screen bg-rose-50 transition-transform transform translate-x-full dark:bg-darkHover dark:text-white"
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image

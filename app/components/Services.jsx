@@ -35,8 +35,8 @@ const Services = () => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        I am a frontend developer from Bengaluru, India, with 2 years of
-        experience building responsive and dynamic web applications.
+        I specialize in developing visually appealing, fast, and user-friendly
+        web applications with a focus on performance and accessibility.
       </motion.p>
 
       <motion.div
