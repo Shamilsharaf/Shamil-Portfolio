@@ -93,7 +93,7 @@ export const workData = [
     title: "Medpro-Research",
     description: "Web Design",
     bgImage: "/work-3.png",
-    link: "https://medpro-research.netlify.app/",
+    link: "https://medproresearch.netlify.app//",
   },
 ];
 
